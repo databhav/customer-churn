@@ -13,7 +13,7 @@ st.set_page_config(layout="wide")
 st.header("Customer Churn Project:")
 st.write("The following is the model performance of customer churn prediction. The deployment only shows the model performance as the data is completely symmetrical. The chart section showcases the confusion matrix and the about data section showcases the findings about data and format of data.")
 # loading the data
-df = pd.read_csv('customer_churn_ld.csv',header=True)
+df = pd.read_csv('customer_churn_ld.csv')
 df3 = df
 
 st.sidebar.markdown(
