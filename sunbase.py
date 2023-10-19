@@ -15,7 +15,7 @@ st.set_page_config(layout="wide")
 st.header("Customer Churn Project:")
 st.write("The following is the model performance of customer churn prediction. The deployment only shows the model performance as the data is completely symmetrical. The chart section showcases the confusion matrix and the about data section showcases the findings about data and format of data.")
 # loading the data
-df = pd.read_excel('/home/anubhav/Downloads/customer_churn_ld.xlsx')
+df = pd.read_excel('customer_churn_ld.xlsx')
 df3 = df
 
 st.sidebar.markdown(
@@ -82,7 +82,7 @@ tab1, tab2 = st.tabs(["📈 Chart","❓About Data"])
 with tab1:
   col1,col2 = st.columns((1,1))
   with col1:
-    st.image('/home/anubhav/pyprojects/cm1.png')
+    st.image('cm1.png')
   with col2:
 
     # Create a contingency table of the predicted churn values vs actual churn values
